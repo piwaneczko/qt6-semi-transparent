@@ -10,5 +10,5 @@ QT_BIN_DIR = C:\Qt\6.*\msvc2019_64\bin
 ## Dependencies
 
 - [CMake min. 3.17](https://cmake.org/download/)
-  [Build Tools for Visual Studio 2022](https://aka.ms/vs/17/release/vs_BuildTools.exe)
+- [Build Tools for Visual Studio 2022](https://aka.ms/vs/17/release/vs_BuildTools.exe)
 - [Qt 6 msvc2019_64](https://doc.qt.io/qt-6/licensing.html)
