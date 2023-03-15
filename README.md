@@ -1,6 +1,6 @@
 # qt6-semi-transparency-example
 
-Project developed for reproduction semi transparency bug in Qt6 for Windows 11
+Project developed for reproduction semi transparency bug in Qt6 and Windows 11
 
 ## Environment variables
 
