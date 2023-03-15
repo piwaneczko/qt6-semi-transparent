@@ -1,0 +1,32 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.installPrefix": "${workspaceFolder}/install",
+    "cmake.configureSettings": {
+        "CMAKE_BUILD_TYPE": "${buildType}",
+        "CMAKE_PREFIX_PATH": [
+            "${env:QT_LIBS_DIR}",
+            "${env:QT_BIN_DIR}"
+        ],
+        "CODE_SIGNING_ENABLED": true
+    },
+    "cmake.saveBeforeBuild": true,
+    "cmake.ctestArgs": [
+        "-VV"
+    ],
+    "editor.formatOnSave": true,
+    "[cmake]": {
+        "editor.formatOnSave": false,
+    },
+    "[markdown]": {
+        "editor.formatOnSave": false,
+    },
+    "[qml]": {
+        "editor.formatOnSave": false,
+    },
+    "markdownlint.config": {
+        "siblings_only": true
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+    }
+}
