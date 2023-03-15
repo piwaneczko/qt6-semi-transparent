@@ -4,7 +4,7 @@ Project developed for reproduction semi transparency bug in Qt6 for Windows 11
 
 ## Environment variables
 
-QT_LIBS_DIR = C:\Qt\6.*\msvc2019_64\lib\cmake\Qt6
+QT_LIBS_DIR = C:\Qt\6.*\msvc2019_64\lib\cmake\Qt6  
 QT_BIN_DIR = C:\Qt\6.*\msvc2019_64\bin
 
 ## Dependencies
