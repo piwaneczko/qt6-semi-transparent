@@ -11,6 +11,7 @@ set(PROJECT_SOURCES
 set (QML_SOURCES    
     resources/qml/main.qml
 )
+set(QML_SOURCES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/resources/qml)
 
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCES}  ${QML_SOURCES})
 source_group("qml" FILES ${QML_SOURCES})
@@ -26,6 +27,6 @@ target_link_libraries(
 set_target_properties(${PROJECT_NAME} PROPERTIES AUTOMOC TRUE)
 if(WIN32)
     add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD 
-        COMMAND ${WINDEPLOYQT} --qmldir $<TARGET_FILE_DIR:${PROJECT_NAME}>/qml $<TARGET_FILE:${PROJECT_NAME}>
+        COMMAND ${WINDEPLOYQT} --qmldir ${QML_SOURCES_DIR} $<TARGET_FILE:${PROJECT_NAME}>
     )
 endif()
