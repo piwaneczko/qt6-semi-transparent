@@ -8,10 +8,8 @@
 int main(int argc, char* argv[]) {
     QApplication::setQuitOnLastWindowClosed(false);
     QApplication app(argc, argv);
-    QQuickWindow::setDefaultAlphaBuffer(true);
-    QSurfaceFormat::defaultFormat().setAlphaBufferSize(1);
     QQmlEngine engine;
-    QQmlComponent(&engine, "qml/main.qml").create();
+    QQmlComponent(&engine, QUrl("qrc:/qml/main.qml")).create();
 
     return app.exec();
 }
