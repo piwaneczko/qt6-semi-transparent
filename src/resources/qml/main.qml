@@ -23,7 +23,8 @@ ApplicationWindow {
 
         Text { 
             id: textBox   
-            anchors.fill: parent            
+            color: Material.foreground
+            anchors.centerIn: parent
         }
     }
 }
