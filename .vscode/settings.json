@@ -12,6 +12,7 @@
         "CODE_SIGNING_ENABLED": true
     },
     "cmake.saveBeforeBuild": true,
+    "cmake.buildBeforeRun": false,
     "cmake.ctestArgs": [
         "-VV"
     ],
