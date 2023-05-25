@@ -10,9 +10,20 @@ ApplicationWindow {
     height: 300
     visible: true
 
+    
+    Component.onCompleted: {
+        textBox.text = "Hello world"
+    }
+    
+
     Rectangle { 
         anchors.fill: parent
         radius: 10
         color: Material.background
+
+        Text { 
+            id: textBox   
+            anchors.fill: parent            
+        }
     }
 }
